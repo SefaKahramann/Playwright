@@ -4,7 +4,7 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import org.testng.annotations.Test;
 
-public class playwright extends baseDriver {
+public class playwrightAndLocators extends baseDriver {
 
     @Test
     public void playwrightStart(){
@@ -61,5 +61,19 @@ public class playwright extends baseDriver {
         // TODO: Playwright’ta page.locator() metodu, hem CSS hem de XPath ile çalışır.
         // TODO:   page.locator("input[name='password']").fill("mypassword");
         // TODO:   page.locator("//input[@name='password']").fill("mypassword");  ikisi içinde de page.locator kullanılabilir
+    }
+
+    @Test
+    public void cssAndXpath(){
+        page.navigate("https://www.saucedemo.com/");
+
+        Locator userName= page.locator("[id='user-name']");
+        userName.fill("standard_user");
+
+        Locator password= page.locator("[id='password']");
+        password.fill("secret_sauce");
+
+        Locator loginBtn=page.locator("//input[@id='login-button']");
+        loginBtn.click();
     }
 }
