@@ -1,10 +1,10 @@
-import Utility.baseDriver;
+import Utility.BaseDriver;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import org.testng.annotations.Test;
 
-public class playwrightAndLocators extends baseDriver {
+public class PlaywrightAndLocators extends BaseDriver {
 
     @Test
     public void playwrightStart(){

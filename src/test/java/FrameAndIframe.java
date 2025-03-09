@@ -1,4 +1,4 @@
-import Utility.baseDriver;
+import Utility.BaseDriver;
 import com.microsoft.playwright.Frame;
 import com.microsoft.playwright.FrameLocator;
 import com.microsoft.playwright.Locator;
@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 
-public class frameAndIframe extends baseDriver {
+public class FrameAndIframe extends BaseDriver {
 
     @Test
     public void iframe(){
