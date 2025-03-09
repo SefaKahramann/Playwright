@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeClass;
 
 import java.awt.*;
 
-public class GWD {
+public class baseDriver {
     public static Playwright playwright;
     public static Browser browser;
     public static Page page;
