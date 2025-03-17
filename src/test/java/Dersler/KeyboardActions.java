@@ -1,9 +1,11 @@
+package Dersler;
+
 import com.microsoft.playwright.Locator;
 import org.testng.annotations.Test;
-import utility.BaseDriver;
+import static utilities.Hooks.page;
 
 
-public class KeyboardActions extends BaseDriver {
+public class KeyboardActions {
 
     @Test
     public void insertText(){

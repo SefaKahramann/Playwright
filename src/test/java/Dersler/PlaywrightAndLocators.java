@@ -1,10 +1,12 @@
-import utility.BaseDriver;
+package Dersler;
+
+import static utilities.Hooks.page;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import org.testng.annotations.Test;
 
-public class PlaywrightAndLocators extends BaseDriver {
+public class PlaywrightAndLocators {
 
     @Test
     public void playwrightStart(){

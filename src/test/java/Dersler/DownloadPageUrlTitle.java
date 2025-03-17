@@ -1,6 +1,8 @@
+package Dersler;
+
 import com.microsoft.playwright.Download;
 import org.testng.annotations.Test;
-import utility.BaseDriver;
+import static utilities.Hooks.page;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -8,7 +10,7 @@ import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class DownloadPageUrlTitle extends BaseDriver {
+public class DownloadPageUrlTitle {
 
     @Test
     public void download() {

@@ -1,10 +1,12 @@
-import utility.BaseDriver;
+package Dersler;
+
+import static utilities.Hooks.page;
 import com.microsoft.playwright.Locator;
 import org.testng.annotations.Test;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
-public class Assertions extends BaseDriver {
+public class Assertions {
 
     @Test
     public void pageAssertions(){

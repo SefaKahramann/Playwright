@@ -1,10 +1,12 @@
-import utility.BaseDriver;
+package Dersler;
+
+import static utilities.Hooks.page;
 import com.microsoft.playwright.Page;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class MultipleWindow extends BaseDriver {
+public class MultipleWindow{
 
     @Test
     public void newTab(){

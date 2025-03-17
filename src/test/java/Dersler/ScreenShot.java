@@ -1,15 +1,16 @@
+package Dersler;
+
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
-import utility.BaseDriver;
+import static utilities.Hooks.page;
 import org.testng.annotations.Test;
 
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
 
-public class ScreenShot extends BaseDriver {
+public class ScreenShot {
     String date = new SimpleDateFormat("_hh_mm_ss_ddMMyyy").format(new Date());
     String filePath ="src/test/java/utility/screenShot/screenShot" + date +".jpg";
 

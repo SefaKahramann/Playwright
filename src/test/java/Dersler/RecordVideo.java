@@ -1,5 +1,6 @@
+package Dersler;
+
 import com.microsoft.playwright.*;
-import org.testng.annotations.Test;
 
 import java.awt.*;
 import java.nio.file.Path;

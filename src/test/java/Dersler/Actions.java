@@ -1,4 +1,6 @@
-import utility.BaseDriver;
+package Dersler;
+
+import static utilities.Hooks.page;
 import com.microsoft.playwright.FileChooser;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.options.SelectOption;
@@ -9,7 +11,7 @@ import java.nio.file.Paths;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
-public class Actions extends BaseDriver {
+public class Actions{
 
     @Test
     public void textInput(){
