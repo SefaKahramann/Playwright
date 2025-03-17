@@ -38,7 +38,7 @@ public class TraceViewer {
         }
         // Stop tracing and export it into a zip archive
         context.tracing().stop(new Tracing.StopOptions()
-                .setPath(Paths.get("trace.zip"))
+                .setPath(Paths.get("trace.zip")) // Dosyayı açma yolu https://trace.playwright.dev/
         );
 
         context.close();
